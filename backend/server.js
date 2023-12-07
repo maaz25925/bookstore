@@ -9,7 +9,7 @@ const app = express();
 // Middleware for parsing request body
 app.use(express.json());
 
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
   console.log(req);
   res.json({ message: 'Welcome to the book store!' });
 });
